@@ -41,9 +41,4 @@ __Everything in JS is an object.__ Look at window in console.
 * __while__ - loops through a block of code while a specified condition is true
 * __do/while__ - also loops through a block of code while a specified condition is true; performs code block once before checking.
 
-### Functions
-* What is a function and characteristics?
-    * block of code designed to perform a particular task
-    * usually includes a return statement
-    * defined and then
-    * invoked
+
