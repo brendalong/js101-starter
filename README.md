@@ -47,10 +47,3 @@ __Everything in JS is an object.__ Look at window in console.
     * usually includes a return statement
     * defined and then
     * invoked
-
-
-### String Methods
-String methods w/Sonnet exercise
-
-
-### Array Methods
