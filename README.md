@@ -1,6 +1,6 @@
 # JS101 Starter
 
-###Variables
+### Variables
 * __number__
 * __string__ - use quotation marks
 * __object__ - curly braces; name:value pairs; separated by commas
@@ -9,7 +9,7 @@
 
 __typeof()__ - used to find the type of js variable
 
-####Arrays and Objects are containers
+#### Arrays and Objects are containers
 * Objects have named labels (keys)
 * Objects use dot notation vs. arrays with bracket notation. 
 
