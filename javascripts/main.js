@@ -80,6 +80,8 @@ console.log("phraseString", phraseString);
 // Add to the current element
 var phrase = document.getElementById("phrase");
 phrase.innerHTML += " And this is a NEW phrase";
+//try it with template literal
+//phrase.innerHTML = `${phrase}, and this is the NEW phrase`;
 
 var addToDOM = document.getElementById("demo")
 addToDOM.innerHTML = "Hi there, NSS ninjas."
