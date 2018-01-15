@@ -14,28 +14,28 @@
 
 console.log("Hello World");
 
-var test = "Hey Chief, you look great today!";
-console.log("test", test);
+const greeting = "Hey Chief, you look great today!";
+console.log("greeting", greeting);
 
 
-var hoursInYear = 24 * 365;
+const hoursInYear = 24 * 365;
 console.log("hoursInYear", hoursInYear);
 
 
 //build on values
-var minsInDecade = (hoursInYear * 60) * 10;
+const minsInDecade = (hoursInYear * 60) * 10;
 console.log("minsInDecade", minsInDecade);
 
 
 //how many seconds old am I?
-var age = 8;
-var secondsInYear = hoursInYear * 60 * 60;
-var ageInSeconds = secondsInYear * age;
+let age = 8;
+let secondsInYear = hoursInYear * 60 * 60;
+let ageInSeconds = secondsInYear * age;
 console.log("ageInSeconds", ageInSeconds);
 
 
 // if older than a value, one is wise, else green
-var wiseVal = 35;
+const wiseVal = 35;
 if (age > wiseVal){
 	console.log("You are very wise");
 }else {
@@ -43,8 +43,8 @@ if (age > wiseVal){
 }
 
 // toFixed
-var myNum = 2.56897654;
-var shortNum = myNum.toFixed(2);
+let myNum = 2.56897654;
+let shortNum = myNum.toFixed(2);
 console.log("shortNum", shortNum);
 
 
@@ -52,41 +52,43 @@ console.log("shortNum", shortNum);
 
 ///////////////////////////////////////////////////////
 // Strings
-var phrase = "The quick brown fox jumps over the lazy dog.";
+let phrase = "The quick brown fox jumps over the lazy dog.";
 // for demo of find/reg expression
 // var phrase = "The lazy brown fox jumps over the lazy dog.";
+
+// show difference of number as string and as number
 
 // In JavaScript, the first position of a string (index) is 0, like arrays
 console.log("T", phrase.indexOf("T"));
 console.log("x", phrase.indexOf("x"));
 
-var phrase2 = "How now brown cow?";
-var position = phrase2.charAt(8);
+let phrase2 = "How now brown cow?";
+let position = phrase2.charAt(8);
 console.log(position); // Will console.log "b"
 
 
-var phrase3 = "The lazy dog";
-var newPhrase3 = phrase3.replace("lazy", "excited");
+let phrase3 = "The lazy dog";
+let newPhrase3 = phrase3.replace("lazy", "excited");
 console.log(newPhrase3);
 
-var phrase4 = "The lazy dog likes the weird fox";
-var newPhrase4 = phrase4.replace(/o/g, "i");
+let phrase4 = "The lazy dog likes the weird fox";
+let newPhrase4 = phrase4.replace(/o/g, "i");
 console.log(newPhrase4);
 
 // DOM interaction
-var phraseString = document.getElementById("phrase").innerHTML;
+let phraseString = document.getElementById("phrase").innerHTML;
 console.log("phraseString", phraseString);
 
 // Add to the current element
-var phrase = document.getElementById("phrase");
+let phrase = document.getElementById("phrase");
 phrase.innerHTML += " And this is a NEW phrase";
 //try it with template literal
 //phrase.innerHTML = `${phrase}, and this is the NEW phrase`;
 
-var addToDOM = document.getElementById("demo")
+let addToDOM = document.getElementById("demo")
 addToDOM.innerHTML = "Hi there, NSS ninjas."
 
-var classStuff = document.getElementsByClassName("lotsOfClass");
+let classStuff = document.getElementsByClassName("lotsOfClass");
 //creates an HTML collection of items. Looks like array but does not act like one.
 console.log("classStuff", classStuff);
 console.log("The second one", classStuff[1]);
@@ -95,7 +97,7 @@ console.log("The second one", classStuff[1]);
 
 ///////////////////////////////////////////////////////
 // lets talk arrays - storage container
-var myJunkDrawer = [3, "dime", true, null, "28"];
+let myJunkDrawer = [3, "dime", true, null, "28"];
 console.log("myJunkDrawer", myJunkDrawer);
 // index starts with zero
 console.log("second item", myJunkDrawer[1]);
@@ -105,17 +107,17 @@ console.log("myJunkDrawer after push", myJunkDrawer);
 // Add new items to the beginning of an array
 myJunkDrawer.unshift("what is unshift");
 console.log("myJunkDrawer after unshift", myJunkDrawer);
-var thing = myJunkDrawer.pop();
+let thing = myJunkDrawer.pop();
 console.log("thing", thing);
 console.log("myJunkDrawer after pop", myJunkDrawer);
 
 
 ///////////////////////////////////////////////////////////
 // Objects
-var songArray = []; //square brackets
-var myObject = {}; // curly braces
+let songArray = []; //square brackets
+let myObject = {}; // curly braces
 
-var song = {
+let song = {
   title: "Call Me Maybe",
   artist: "Carley Rae Jepsen",
   album: "Cool Songs",
@@ -136,7 +138,7 @@ songArray.push(song);
 // how to invoke the song's listAwards function?
 songArray[0].listAwards();
 
-var mindBlown = "hidden Object";
+let mindBlown = "hidden Object";
 console.log("Window", window );
 
 // find out the key (name) for items in object
@@ -148,9 +150,11 @@ console.log("Object.keys(song)", Object.keys(song));
 // Loops
 
 // Write a for loop that increments the counter variable by 10 each time, and displays the value.
-for (var i = 0; i < 100; i += 10) {
+for (let i = 0; i < 100; i += 10) {
   console.log("count by ten", i);
 };
+
+//difference of var and let: inside and outside for loop.
 
 // Write a for loop that divides the counter variable by 2 each time, and displays the value.
 for (var i = 100; i > 1; i = i / 2) {
@@ -169,7 +173,7 @@ console.log("halfVals", halfVals);
 // If the number is even, add the number to the beginning of an array, 
 // else add it to the end of the array.
 
-var evenOdds = [];
+let evenOdds = [];
 for (var i = 100; i >= 0; i--) {
   if (i % 2 === 0) {
     evenOdds.unshift(i);
@@ -199,7 +203,7 @@ console.log("evenOdds with >=", evenOdds );
 //     [break;]
 // }
 
-var value = 10;
+let value = 10;
 switch (true) {
   case value < 1:
     console.log("Small number");
